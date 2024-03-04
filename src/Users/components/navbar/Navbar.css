@@ -1,0 +1,104 @@
+@charset "UTF-8";
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #ffffff;
+  --blackColor: #434344;
+}
+
+.Navbar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  z-index: 1000;
+  cursor: pointer;
+}
+.Navbar .navbarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Navbar .navbarHeader .NavbarLogoSection {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.Navbar .navbarHeader .NavbarLogoSection span {
+  text-transform: uppercase;
+  letter-spacing: 0.42em;
+  font-size: 16px;
+  font-weight: 600;
+}
+.Navbar .navbarHeader .NavbarLogoSection .verticleLine {
+  border-left: 1.5px black solid;
+  height: 3rem;
+}
+.Navbar .navbarHeader .NavbarLogoSection p {
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 8em;
+  text-transform: capitalize;
+}
+.Navbar .navbarHeader .NavbarMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+}
+.Navbar .navbarHeader .NavbarMenu li {
+  list-style: none;
+  font-weight: 545;
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown {
+  position: relative;
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown::after {
+  content: "▾";
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown:hover {
+  text-decoration: underline;
+  transition: -webkit-text-decoration 5s;
+  transition: text-decoration 5s;
+  transition: text-decoration 5s, -webkit-text-decoration 5s;
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  opacity: 0;
+  animation: slideDown ease forwards;
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown .dropdown-content li {
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 8rem;
+  cursor: pointer;
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown .dropdown-content li:hover {
+  transform: scale(1.1);
+}
+.Navbar .navbarHeader .NavbarMenu li.dropdown:hover .dropdown-content {
+  display: block;
+  animation: slideDown 1s ease forwards;
+}
+.Navbar .navbarHeader .NavbarMenu li:hover {
+  cursor: pointer;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transition: 3s;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Navbar.css.map */

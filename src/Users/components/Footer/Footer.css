@@ -1,0 +1,243 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #ffffff;
+  --blackColor: #434344;
+}
+
+.Footer .FooterSection {
+  background-color: #dad8d8;
+  padding-bottom: 2em;
+  padding: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Footer .FooterSection .letConnect {
+  -moz-column-gap: 3em !important;
+       column-gap: 3em !important;
+}
+.Footer .FooterSection .letConnect .letConnectOne {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.Footer .FooterSection .letConnect .letConnectOne h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .letConnect .letConnectOne p {
+  width: 15rem;
+}
+.Footer .FooterSection .letConnect .letConnectTwo {
+  margin-top: 4em;
+}
+.Footer .FooterSection .letConnect .letConnectTwo button {
+  font-weight: 800;
+}
+.Footer .FooterSection .letConnect .letConnectTwo:focus {
+  outline: none;
+  border: none;
+}
+.Footer .FooterSection .FooterAddressArea {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.3em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterAddress h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .FooterAddressArea .FooterAddress p {
+  max-width: 10em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.3em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterEmail h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .FooterAddressArea .FooterEmail a {
+  max-width: 10em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterNumber {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.3em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterNumber h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .FooterAddressArea .FooterNumber a {
+  max-width: 10em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterLink {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+.Footer .FooterSection .FooterAddressArea .FooterLink li {
+  list-style: none;
+}
+.Footer .FooterSection .FooterAddressArea .FooterLink li a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormHeading h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+  margin-top: 2em;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputOne {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputOne input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputOne:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputTwo {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputTwo input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormInlineInputs .FooterinputTwo:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputThree {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputThree input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputThree:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputFour {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputFour label {
+  font-size: 12px;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputFour textarea {
+  font-size: 10px;
+  background: transparent;
+  border: none;
+  height: 60px;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsFormInputs .FooterContactUsFormBlockInputs .FooterinputFour:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsForm {
+  display: flex;
+  justify-content: center;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsForm button {
+  background: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  width: 23em;
+  height: 4em;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsForm button a {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsForm button:hover {
+  background-color: #2f4a45;
+  outline: none;
+  border: none;
+}
+.Footer .FooterSection .FooterContactUsForm .FooterContactUsForm:hover {
+  outline: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #2f4a45;
+}
+.Footer .FooterSection .footerLinksSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Footer .FooterSection .footerLinksSection .footerLinksHeading h1 {
+  font-weight: 800;
+}
+.Footer .FooterSection .footerLinksSection .footerLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+}
+.Footer .FooterSection .footerLinksSection .footerLinks li {
+  font-size: 18px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Footer .FooterSection .footerLinksSection .footerLinks li span {
+  cursor: pointer;
+}
+.Footer .FooterSection .footerLinksSection .footerLinks li span:hover {
+  transition: 1s !important;
+  border-bottom: 1px solid black;
+}
+.Footer .FooterBar {
+  background-color: #2B4742;
+  color: #ffffff;
+  padding: 3em;
+}
+.Footer .FooterBar .FooterBarHeading {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=Footer.css.map */

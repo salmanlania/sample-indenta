@@ -1,0 +1,135 @@
+.CorporateServices {
+    padding-top: 4.6em;
+    .CorporateServicesHeader {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Lora", serif !important;
+        background: #000000be;
+        padding: 8em;
+        background:
+            linear-gradient(rgba(6, 35, 65, 0.835), rgba(6, 37, 68, 0.855)),
+            url(./Images/corporateBg.png) center center;
+        height: 90%;
+        .CorporateServicesHeading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-weight: 800;
+            }
+        }
+    }
+    .CorporateServicesSecond {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 4em;
+        p {
+            font-size: 21px;
+            font-weight: 500;
+        }
+    }
+    .CorporateServicesThird {
+        background-color: whitesmoke;
+        display: flex;
+        padding: 4rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        h1 {
+            font-weight: 700;
+        }
+        button {
+            background: transparent;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            outline: none;
+            border: none;
+            width: 13em;
+            border-radius: 4rem;
+            height: 3em;
+            a {
+                background: transparent;
+                outline: none;
+                border: none;
+            }
+            &:hover {
+                background-color: #2f4a45;
+                outline: none;
+                border: none;
+                color: white;
+            }
+        }
+    }
+    .CorporateServicesFourth {
+        padding-top: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+        max-width: 68rem;
+        margin: auto;
+        h1 {
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+    .CorporateServicesFifth {
+        margin: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        .CorporateServicesFourthCard {
+            border-radius: 3rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: whitesmoke;
+            max-width: 19em;
+            padding: 2rem;
+            img {
+                align-items: center;
+                background: #0f2b52;
+                border-radius: 50px;
+                color: #fff;
+                display: flex;
+                height: 60px;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: 60px;
+            }
+            h1 {
+                color: #0f2b52;
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            p {
+                font-weight: 500;
+                color: #0f2b52;
+                font-size: 17px;
+                line-height: 24px;
+                margin-bottom: 0;
+                max-width: 18em;
+            }
+            @keyframes slide-top {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transition: 4s;
+                    transform: translateY(-3%);
+                }
+            }
+
+            &:hover {
+                background-color: rgba(245, 245, 245, 0.441);
+                -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            }
+        }
+    }
+}

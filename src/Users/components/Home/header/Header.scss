@@ -1,0 +1,46 @@
+:root {
+    --primaryColor: #7a63f1;
+    --secondaryColor: #ebe8fc;
+    --textColor: #a3a3a3;
+    --greyColor: #f4f4f4;
+    --whiteColor: #ffffff;
+    --blackColor: #434344;
+}
+
+.Header{
+    margin-top: 3em !important;
+    .HeaderContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        align-items: center;
+        h1{
+            letter-spacing: 0.06em;
+            font-size: 58px;
+            color: var(--whiteColor);
+            font-weight: 600;
+        }
+        p{
+            letter-spacing: 0.05em;
+            color: var(--whiteColor);
+        }
+        button{
+            width: fit-content;
+            border: 1.5px solid white;
+            padding: 2em;
+            a{
+                text-align: center;
+                font-weight: 600;
+                font-size: 16px;
+                color: var(--whiteColor);
+            }
+            &:hover{
+                background: var(--blackColor);
+                color: var(--whiteColor);
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

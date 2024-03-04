@@ -1,0 +1,8 @@
+.divContainer>{
+    .logo{
+        background-color: blue;
+        &:hover{
+            background-color: yellow !important;
+        }
+    }
+}

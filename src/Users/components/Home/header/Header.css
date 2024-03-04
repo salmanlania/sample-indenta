@@ -1,0 +1,47 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #ffffff;
+  --blackColor: #434344;
+}
+
+.Header {
+  margin-top: 3em !important;
+}
+.Header .HeaderContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+}
+.Header .HeaderContent h1 {
+  letter-spacing: 0.06em;
+  font-size: 58px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.Header .HeaderContent p {
+  letter-spacing: 0.05em;
+  color: var(--whiteColor);
+}
+.Header .HeaderContent button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1.5px solid white;
+  padding: 2em;
+}
+.Header .HeaderContent button a {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--whiteColor);
+}
+.Header .HeaderContent button:hover {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=Header.css.map */

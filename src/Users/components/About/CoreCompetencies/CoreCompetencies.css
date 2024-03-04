@@ -1,0 +1,29 @@
+.CoreCompetencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.CoreCompetencies .CoreCompetenciesHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.CoreCompetencies .CoreCompetenciesHeading p {
+  width: 70em;
+  text-align: center;
+}
+.CoreCompetencies .CoreCompetenciesHeadingTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.CoreCompetencies .CoreCompetenciesHeadingTiles div {
+  background-color: rgba(13, 36, 77, 0.9254901961);
+  color: white;
+}
+.CoreCompetencies .CoreCompetenciesHeadingTiles div p {
+  color: white;
+}/*# sourceMappingURL=CoreCompetencies.css.map */

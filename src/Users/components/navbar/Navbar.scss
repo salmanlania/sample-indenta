@@ -1,0 +1,116 @@
+:root {
+    --primaryColor: #7a63f1;
+    --secondaryColor: #ebe8fc;
+    --textColor: #a3a3a3;
+    --greyColor: #f4f4f4;
+    --whiteColor: #ffffff;
+    --blackColor: #434344;
+}
+
+.Navbar {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // position: fixed;
+    // top: 1.4rem !important;  
+    width: 100%;
+    z-index: 1000;
+    // height: 4rem;
+    cursor: pointer;
+    .navbarHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .NavbarLogoSection {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            span {
+                text-transform: uppercase;
+                letter-spacing: 0.42em;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .verticleLine {
+                border-left: 1.5px black solid;
+                height: 3rem;
+            }
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                max-width: 8em;
+                text-transform: capitalize;
+            }
+        }
+        .NavbarMenu {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2em;
+          
+            li {
+              list-style: none;
+              font-weight: 545;
+          
+              &.dropdown {
+                position: relative;
+
+                &::after{
+                  content: "▾";
+                }
+
+                &:hover {
+                  text-decoration: underline;
+                  transition: text-decoration 5s,
+              }
+          
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  background-color: #fff;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                  padding: 10px;
+                  z-index: 1;
+                  opacity: 0;
+                  animation: slideDown ease forwards;
+          
+                  li {
+                    padding: 8px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    width: 8rem;
+                    cursor: pointer;
+          
+                    &:hover {
+                      transform: scale(1.1);
+                      // transition: 1s;
+                    }
+                  }
+                }
+          
+                &:hover .dropdown-content {
+                  display: block;
+                  animation: slideDown 1s ease forwards;
+                }
+              }
+          
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          
+            @keyframes slideDown {
+              from {
+                opacity: 0;
+                transition: 3s;
+                transform: translateY(10px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          }
+          
+    }
+}

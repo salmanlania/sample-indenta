@@ -1,0 +1,131 @@
+.ConsumerServices {
+  padding-top: 4.6em;
+}
+.ConsumerServices .ConsumerServicesHeader {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Lora", serif !important;
+  background: rgba(0, 0, 0, 0.7450980392);
+  padding: 8em;
+  background: linear-gradient(rgba(6, 35, 65, 0.835), rgba(6, 37, 68, 0.855)), url(./Images/consumerBg.png) center center;
+  height: 90%;
+}
+.ConsumerServices .ConsumerServicesHeader .ConsumerServicesHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ConsumerServices .ConsumerServicesHeader .ConsumerServicesHeading h1 {
+  font-weight: 800;
+}
+.ConsumerServices .ConsumerServicesSecond {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 4em;
+}
+.ConsumerServices .ConsumerServicesSecond p {
+  font-size: 21px;
+  font-weight: 500;
+}
+.ConsumerServices .ConsumerServicesThird {
+  background-color: whitesmoke;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.ConsumerServices .ConsumerServicesThird h1 {
+  font-weight: 700;
+}
+.ConsumerServices .ConsumerServicesThird button {
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  outline: none;
+  border: none;
+  width: 13em;
+  border-radius: 4rem;
+  height: 3em;
+}
+.ConsumerServices .ConsumerServicesThird button a {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.ConsumerServices .ConsumerServicesThird button:hover {
+  background-color: #2f4a45;
+  outline: none;
+  border: none;
+  color: white;
+}
+.ConsumerServices .ConsumerServicesFourth {
+  padding-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  max-width: 68rem;
+  margin: auto;
+}
+.ConsumerServices .ConsumerServicesFourth h1 {
+  font-weight: 700;
+}
+.ConsumerServices .ConsumerServicesFourth p {
+  margin-bottom: 1rem;
+}
+.ConsumerServices .ConsumerServicesFifth {
+  margin: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ConsumerServices .ConsumerServicesFifth .ConsumerServicesFourthCard {
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+  max-width: 19em;
+  padding: 2rem;
+}
+.ConsumerServices .ConsumerServicesFifth .ConsumerServicesFourthCard img {
+  align-items: center;
+  background: #0f2b52;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 60px;
+}
+.ConsumerServices .ConsumerServicesFifth .ConsumerServicesFourthCard h1 {
+  color: #0f2b52;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.ConsumerServices .ConsumerServicesFifth .ConsumerServicesFourthCard p {
+  font-weight: 500;
+  color: #0f2b52;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 0;
+  max-width: 18em;
+}
+@keyframes slide-top {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transition: 4s;
+    transform: translateY(-3%);
+  }
+}
+.ConsumerServices .ConsumerServicesFifth .ConsumerServicesFourthCard:hover {
+  background-color: rgba(245, 245, 245, 0.441);
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}/*# sourceMappingURL=ConsumerServices.css.map */

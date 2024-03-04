@@ -1,0 +1,105 @@
+.GetInTouch {
+    padding-top: 1em;
+    overflow: hidden;
+    .GetInTouchPartOne {
+        background:
+            linear-gradient(rgba(6, 35, 65, 0.835), rgba(6, 37, 68, 0.855)),
+            url(./images/bg.jpg) center center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Lora", serif !important;
+        padding: 4em;
+        .GetInTouchHeading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7em !important;
+            text-align: center;
+            gap: 2rem;
+            h1 {
+                font-size: 56px;
+                color: #fff;
+                font-weight: 700;
+                line-height: 56px;
+            }
+
+            button {
+                transition: 0.5s;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                display: inline-block;
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 15px 35px;
+                cursor: pointer;
+                a {
+                    font-size: 18px;
+                    color: #fff;
+                    transition: scale 1s ease;
+                    &:hover {
+                        transition: 2s;
+                        transform: scale(1.1);
+                        font-size: 20px;
+                    }
+                }
+                &:hover {
+                    transition: 1.6s;
+                    background: #01091c;
+                }
+            }
+        }
+    }
+    .GetInTouchFieldset {
+        padding: 2em;
+        width: 100%;
+        .GetInTouchContactUsForm {
+            margin-left: 3rem;
+            input,
+            textarea {
+                background-color: transparent;
+                transition:
+                    border-color 0.3s,
+                    box-shadow 0.3s;
+
+                &:focus {
+                    border-color: #061946;
+                    box-shadow: 0 0 5px rgba(6, 25, 70, 0.5);
+                }
+            }
+            button {
+                background: transparent;
+                color: black;
+                border: 1px solid black;
+                border-radius: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 8px 30px;
+                outline: none;
+                cursor: pointer;
+                transition: background 0.5s;
+
+                a {
+                    // color: black;
+                    transition: transform 1s ease;
+
+                    &:hover {
+                        // transform: scale(1.1);
+                        color: #fff;
+                    }
+                }
+
+                &:hover {
+                    border: none;
+                    transition: 2s;
+                    background: #01091c;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
