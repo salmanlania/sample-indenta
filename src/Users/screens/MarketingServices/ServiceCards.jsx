@@ -6,38 +6,31 @@ import { Typography, Grid } from '@mui/material';
 import image1 from './cardImages/one.jpg';
 import image2 from './cardImages/two.jpg';
 import image3 from './cardImages/three.jpg';
-import image4 from './cardImages/four.jpg';
 
 const printCard = [
   {
-    Cardtitle: 'Empower Your Financial Journey Today. Secure the Ideal Credit Card Now!',
+    Cardtitle: 'Online Marketing',
     cardText:
-      'Indenta DSA stands as your reliable partner in navigating the world of credit cards in the UAE. Follow these steps to secure the perfect credit card tailored to your needs.',
+      'Swiftly reach your target customers and achieve results with our expertise.',
     image: image1,
   },
   {
-    Cardtitle: 'Explore Our Array of Credit Card Options:',
+    Cardtitle: 'Direct Sales',
     cardText:
-      'Make an informed decision by comparing the options available. Indenta DSA empowers you to choose the credit card that aligns seamlessly with your lifestyle, offering a transparent view of the terms, benefits, and exclusive features associated with each option.',
+      'Embark on business development and sales activities with our proactive team.',
     image: image2,
   },
   {
-    Cardtitle: 'Compare and Select Your Ideal Credit Card:',
+    Cardtitle: 'Telesales',
     cardText:
-      'Make an informed decision by comparing the options available. Indenta DSA empowers you to choose the credit card that aligns seamlessly with your lifestyle, offering a transparent view of the terms, benefits, and exclusive features associated with each option.',
+      'Telesales via contact center designed to align with your business goals.',
     image: image3,
-  },
-  {
-    Cardtitle: 'Swiftly Apply and Acquire Your Chosen Card:',
-    cardText:
-      'Seize control of your financial destiny by applying for your selected credit card. Indenta DSA streamlines the application process, providing you with a hassle-free',
-    image: image4,
   },
 ];
 
 const ServiceCards = () => {
   return (
-    <Grid container spacing={2} justifyContent="center">
+<Grid container spacing={2} justifyContent="center">
       {printCard.map((card, index) => (
         <Grid key={card.Cardtitle} item xs={12}>
           <Card style={{ height: '100%' }}>

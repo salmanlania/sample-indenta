@@ -10,6 +10,8 @@ export const Contact = () => {
     return (
         <div className="ContactGet">
             <Navbar />
+            <br />
+            <br />
             <Footer />
         </div>
     )

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import './ContactForm.css'
 
 export default function ContactForm() {
   const [formData, setFormData] = React.useState({
@@ -17,14 +18,12 @@ export default function ContactForm() {
   };
 
   const handleTextareaResize = (e) => {
-    // Adjust the height of the textarea based on its scrollHeight
     e.target.style.height = 'auto';
     e.target.style.height = `${e.target.scrollHeight}px`;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
     console.log(formData);
   };
 
@@ -51,7 +50,8 @@ export default function ContactForm() {
             required
             label="Name"
             onChange={(e) => handleInputChange('firstName', e.target.value)}
-            fullWidth
+            sx={{width : '140%' }}
+            InputProps={{ classes: { notchedOutline: 'no-border' } }}
           />
         </Grid>
         <Grid item xs={12}>
@@ -60,7 +60,8 @@ export default function ContactForm() {
             label="Phone Number"
             type="number"
             onChange={(e) => handleInputChange('phoneNumber', e.target.value)}
-            fullWidth
+            sx={{width : '140%' }}
+            InputProps={{ classes: { notchedOutline: 'no-border' } }}
           />
         </Grid>
         <Grid item xs={12}>
@@ -69,7 +70,8 @@ export default function ContactForm() {
             label="Email"
             type="email"
             onChange={(e) => handleInputChange('email', e.target.value)}
-            fullWidth
+            sx={{width : '140%' }}
+            InputProps={{ classes: { notchedOutline: 'no-border' } }}
           />
         </Grid>
         <Grid item xs={12}>
@@ -83,14 +85,15 @@ export default function ContactForm() {
             value={formData.message}
             style={{
               padding: '0.8rem 0 0 0.7rem',
-              width: '100%',
-              maxWidth: '100%',
+              width: '140%',
+              maxWidth: '140%',
               resize: 'none',
               overflowY: 'hidden',
               background: 'transparent',
-              fontSize : '1rem'
+              fontSize : '1rem',
             }}
             rows={5}
+            InputProps={{ classes: { notchedOutline: 'no-border' } }}
           />
         </Grid>
         <Grid item xs={12}>
@@ -103,7 +106,7 @@ export default function ContactForm() {
               boxShadow: 'none',
               color: 'black',
               border: '1px solid black',
-              width: '100%',
+              width: '140%',
               height: 'auto',
               fontSize: '1rem',
               '&:hover': {

@@ -8,15 +8,14 @@ import Five from './images/5.png';
 
 const CreditCardBenefits = () => {
   return (
-    <div style={{ marginBottom: '3rem' }}>
-      <Paper elevation={3} sx={{ textAlign: 'center', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 1, p: 1, background: 'linear-gradient(1deg, #44528B 30%, #8E24AA 40%)' }}>
-        <Typography variant="h5" sx={{ color: 'white' }}>
+    <div style={{ marginBottom: '3rem'}}>
+      <Paper elevation={3} sx={{ textAlign: 'center', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 1, p: 1,  }}>
+        <Typography variant="h4" sx={{ fontWeight : 'bold' , marginTop : '2rem' , marginBottom: '1rem'}}>
           Benefits of Using a Credit Card
         </Typography>
       </Paper>
       <Container>
-
-        <Grid container >
+        <Grid container sx={{marginTop: '3rem'}}>
           <Grid item xs={12} md={6} lg={6}>
             <section sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', marginLeft: { xs: 0, md: '17rem' }, marginTop: '2rem' }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>

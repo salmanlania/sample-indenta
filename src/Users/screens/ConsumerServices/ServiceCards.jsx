@@ -6,32 +6,25 @@ import { Typography, Grid } from '@mui/material';
 import image1 from './cardImages/one.jpg';
 import image2 from './cardImages/two.jpg';
 import image3 from './cardImages/three.jpg';
-import image4 from './cardImages/four.jpg';
 
 const printCard = [
   {
-    Cardtitle: 'Empower Your Financial Journey Today. Secure the Ideal Credit Card Now!',
+    Cardtitle: 'Loan Assistance',
     cardText:
-      'Indenta DSA stands as your reliable partner in navigating the world of credit cards in the UAE. Follow these steps to secure the perfect credit card tailored to your needs.',
+      'Whether for mortgage loans, auto loans, or other related loans, we assist you in securing the financing you need.',
     image: image1,
   },
   {
-    Cardtitle: 'Explore Our Array of Credit Card Options:',
+    Cardtitle: 'Credit Cards',
     cardText:
-      'Make an informed decision by comparing the options available. Indenta DSA empowers you to choose the credit card that aligns seamlessly with your lifestyle, offering a transparent view of the terms, benefits, and exclusive features associated with each option.',
+      'Unlock the potential of your finances with Indenta’s tailored credit card solutions. Let us guide you to discover the perfect credit card for your needs.',
     image: image2,
   },
   {
-    Cardtitle: 'Compare and Select Your Ideal Credit Card:',
+    Cardtitle: 'Insurance Solutions',
     cardText:
-      'Make an informed decision by comparing the options available. Indenta DSA empowers you to choose the credit card that aligns seamlessly with your lifestyle, offering a transparent view of the terms, benefits, and exclusive features associated with each option.',
+      'We assist in finding affordable insurance plans that cater to your specific needs.',
     image: image3,
-  },
-  {
-    Cardtitle: 'Swiftly Apply and Acquire Your Chosen Card:',
-    cardText:
-      'Seize control of your financial destiny by applying for your selected credit card. Indenta DSA streamlines the application process, providing you with a hassle-free',
-    image: image4,
   },
 ];
 
@@ -50,7 +43,7 @@ const ServiceCards = () => {
                 />
               </Grid>
               <Grid item xs={12} md={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' , alignItems : 'center' }}>
+                <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', alignItems: 'center' }}>
                   <Typography variant="h5" gutterBottom style={{ fontSize: '2rem' }}>
                     {card.Cardtitle}
                   </Typography>

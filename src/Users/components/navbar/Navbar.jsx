@@ -20,7 +20,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About Us', 'Contact Us'];
+const navItems = ['Home', 'About Us', 'Contact Us' ];
 
 export default function Navbar(props) {
   const { window } = props;
@@ -61,6 +61,9 @@ export default function Navbar(props) {
         break;
       case 'Corporate Services':
         navigate('/corporate-services');
+        break;
+      case 'Careers':
+        navigate('/careers');
         break;
       case 'Contact Us':
         navigate('/contactus');
@@ -178,7 +181,6 @@ export default function Navbar(props) {
         <AppBar component="nav" sx={appBarStyle}>
           <Toolbar sx={{ backgroundColor: 'transparent !important', '& .MuiToolbar-root': { justifyContent: 'center' } }}>
             <IconButton
-              color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
@@ -191,7 +193,7 @@ export default function Navbar(props) {
                 <Typography variant="h6" component="div" sx={{ fontSize: '17px', color: 'black', fontWeight: 'bold' }}>
                   INDENTA
                 </Typography>
-                <Typography variant="h6" component="div" sx={{ fontSize: '17px', borderRight: '1px solid white' }}>
+                <Typography variant="h6" component="div" sx={{ fontSize: '17px', borderRight: '2px solid black' }}>
                 </Typography>
                 <Typography variant="h6" component="div" sx={{ maxWidth: '200px', fontSize: '17px', color: 'black', fontWeight: 'bold' }}>
                   Business Solutions Group
