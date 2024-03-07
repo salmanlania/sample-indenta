@@ -14,6 +14,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import ContactForm from './ContactForm/ContactForm';
+import { useNavigate } from 'react-router-dom';
 
 const footerDetailGetStart =
   "Let's Connect and Explore! We're excited to engage with you. Whether you're looking for innovative solutions, seamless transactions, or collaboration opportunities across industries, we're here to make it happen. Drop us a line, and let's embark on a journey of possibilities together!";
@@ -71,6 +72,7 @@ const StyledTextareaAutosize = styled(TextareaAutosize)(
 );
 
 export default function Footer() {
+  const naviagte = useNavigate()
   return (
     <section
       style={{
@@ -191,8 +193,9 @@ export default function Footer() {
       >
         <Grid item>
           <Typography
+          onClick={()=>naviagte('/')}
             variant="body1"
-            sx={{ fontSize: '0.9rem', '&:hover': { color: 'red', transition: '1s' } }}
+            sx={{ cursor : 'pointer' , fontSize: '0.9rem', '&:hover': { color: 'red', transition: '1s' } }}
           >
             Home
           </Typography>

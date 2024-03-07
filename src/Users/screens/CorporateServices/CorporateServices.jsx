@@ -12,7 +12,7 @@ import ServiceCards from './ServiceCards';
 
 export const CorporateServices = () => {
     useEffect(() => {
-        document.title = 'Marketing Services | Indenta';
+        document.title = 'Corporate Services | Indenta';
         AOS.init({
             duration: 1000,
             once: false,
@@ -73,54 +73,31 @@ export const CorporateServices = () => {
                         </Card>
                     </Grid>
 
-                    {/* Consultation Section */}
-                    <Grid item xs={12} sm={4} md={4} >
-                        <Card sx={{ display: 'flex', flexDirection: 'column', padding: '1rem', gap: '2rem', alignItems: 'center', width: '100vw', }} data-aos="fade-up" data-aos-duration="200">
-                            <Typography variant="h3" sx={{ fontWeight: 700 }}>
-                                Consult our Expert
-                            </Typography>
-                            <Button variant="contained" color="primary" sx={{
-                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                                color: 'white',
-                                outline: 'none',
-                                border: 'none',
-                                width: '15em',
-                                borderRadius: '4rem',
-                                height: '3em',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}>
-                                Book an Appointment
-                            </Button>
-                        </Card>
-                    </Grid>
-
-
-
-                    {/* Offered Services Section */}
-                    <Grid item xs={12} sx={{ background: '#23568B', marginBottom: '1.4rem' }}>
+                    <Grid item xs={12} sx={{ marginBottom: '1.4rem' }}>
                         <Card
                             sx={{
                                 textAlign: 'center',
                                 maxWidth: '68rem',
                                 margin: 'auto',
-                                color: 'white',
                                 padding: '2rem',
                                 display: 'flex',
                                 background: 'transparent',
                                 flexDirection: 'column',
+                                boxShadow: 'none',
                                 gap: '2rem',
 
                             }}
                             data-aos="fade-up-right"
                             data-aos-duration="500"
                         >
-                            <Typography variant="h3" sx={{ fontWeight: 700 }}>
+                            <Typography variant="h4" sx={{ fontWeight: 700 }}>
+                                Consult our Expert: Book an Appointment Tab (CTA)
+                                <br />
+                                <br />
                                 Our Offered Services
                             </Typography>
                             <Typography variant="body1" sx={{ marginBottom: '1rem', fontSize: '1.2rem' }}>
-                                Indenta DSA is consistently aligned with the nature of financial needs, and therefore, we deliver an extensive range of services with continually adaptive management. We precisely assess our customers’ financial situations, guiding them towards the realization of their financial objectives.
+                                Indenta DSA revolves around devising and executing marketing strategies centered on the core of your business. Our commitment extends beyond strategy implementation – we provide steadfast support to help you achieve your business goals and objectives.
                             </Typography>
                         </Card>
                     </Grid>

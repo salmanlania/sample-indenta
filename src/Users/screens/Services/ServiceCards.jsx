@@ -6,7 +6,7 @@ import { Typography, Grid } from '@mui/material';
 import image1 from './cardImages/one.jpg';
 import image2 from './cardImages/two.jpg';
 import image3 from './cardImages/three.jpg';
-import image4 from './cardImages/four.jpg';
+import image4 from './cardImages/four.jfif';
 
 const printCard = [
   {
