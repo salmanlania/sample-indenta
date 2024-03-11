@@ -62,7 +62,7 @@ const OurStory = () => {
                         alt="Your Image"
                         style={{ maxWidth: '120%', height: '120%', objectFit: 'cover', marginRight: { xs: 0, sm: 2 } }}
                     />
-                    <div style={{ color: 'white', background: '#2B4742', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
+                    <div style={{ color: 'black', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
                         <Typography variant="h4" gutterBottom sx={{ display: 'flex', justifyContent: 'center', marginTop: '4rem', textAlign: 'center' }}>
                             Welcome To Indenta DSA
                         </Typography>
@@ -80,7 +80,7 @@ const OurStory = () => {
                         height: '100%',
                     }}
                 >
-                    <div style={{ color: 'white', background: '#2B4742', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
+                    <div style={{ color: 'black', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
                         <Typography variant="h4" gutterBottom sx={{ display: 'flex', justifyContent: 'center', marginTop: '4rem', textAlign: 'center' }}>
                             Our Mission and Specialization
                         </Typography>
@@ -108,7 +108,7 @@ const OurStory = () => {
                         alt="Your Image"
                         style={{ maxWidth: '120%', height: '120%', objectFit: 'cover', marginRight: { xs: 0, sm: 2 } }}
                     />
-                    <div style={{ color: 'white', background: '#2B4742', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
+                    <div style={{ color: 'black', height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '1rem' }}>
                         <Typography variant="h4" gutterBottom sx={{ display: 'flex', justifyContent: 'center', marginTop: '4rem', textAlign: 'center' }}>
                             Core Competencies
                         </Typography>

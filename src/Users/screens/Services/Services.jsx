@@ -79,31 +79,28 @@ export const Services = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
-          minHeight: '200px',
-          padding: '20px',
           borderRadius: '8px',
         }}
       >
         <CardContent>
-          <Typography variant="h5">
+          {/* <Typography variant="h4" sx={{textAlign : 'center' , fontWeight : 'bold'}}>
             The Smart Choice for Credit Cards in the UAE. Indenta DSA– Your Ultimate Credit Card Companion
-          </Typography>
-          <Button
+          </Typography> */}
+          {/* <Button
             variant="contained"
             color="primary"
             sx={{ marginTop: '20px' }}
           >
             Start Now <span style={{ marginLeft: '7px', fontSize: '1.6rem' }}>!</span>
-          </Button>
+          </Button> */}
         </CardContent>
       </Card>
 
-      <Paper elevation={3} sx={{ textAlign: 'center', width: '100vw', overflow: 'hidden', height: '3rem', display: 'flex', alignItems: 'center', height: '4rem' }}>
+      {/* <Paper elevation={3} sx={{ textAlign: 'center', width: '100vw', overflow: 'hidden', height: '3rem', display: 'flex', alignItems: 'center', height: '4rem' }}>
         <Typography variant="h4" sx={{ margin: 'auto', fontWeight: 'bold', marginBottom: '4rem', marginTop: '4rem' }}>
           Consult our Expert: Book an Appointment Tab (CTA)
         </Typography>
-      </Paper>
+      </Paper> */}
 
       <ServiceCards />
       <CreditCardBenifits />

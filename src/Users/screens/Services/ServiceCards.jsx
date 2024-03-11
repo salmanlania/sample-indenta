@@ -7,8 +7,15 @@ import image1 from './cardImages/one.jpg';
 import image2 from './cardImages/two.jpg';
 import image3 from './cardImages/three.jpg';
 import image4 from './cardImages/four.jfif';
+import last from './cardImages/last1.jpg'
 
 const printCard = [
+  {
+    Cardtitle: 'The Smart Choice for Credit Cards in the UAE. Indenta DSA– Your Ultimate Credit Card Companion',
+    cardText:
+      'Consult our Expert: Book an Appointment Tab (CTA)',
+    image: last,
+  },
   {
     Cardtitle: 'Empower Your Financial Journey Today. Secure the Ideal Credit Card Now!',
     cardText:
@@ -50,7 +57,7 @@ const ServiceCards = () => {
                 />
               </Grid>
               <Grid item xs={12} md={6} order={{ xs: 2, md: index % 2 === 0 ? 2 : 1 }}>
-                <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' , alignItems : 'center' }}>
+                <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', alignItems: 'center' }}>
                   <Typography variant="h5" gutterBottom style={{ fontSize: '2rem' }}>
                     {card.Cardtitle}
                   </Typography>
