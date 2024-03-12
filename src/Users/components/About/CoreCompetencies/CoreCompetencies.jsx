@@ -27,7 +27,7 @@ export const CoreCompetencies = () => {
         { image: fourthImage, title: 'Result Orientation', content: 'Achieving company goals by setting challenging targets, directing efforts accordingly, and surpassing expectations.' },
       ].map((item, index) => (
         <Grid key={index} item xs={12} sm={6} md={3} sx={{ marginBottom: '1rem', padding: '1rem' }}>
-          <Card sx={{ width: '100%', height: '60vh', backgroundColor: 'rgba(13, 36, 77, 0.9254901961)', color: 'white', overflow: 'hidden', borderRadius: '16px', position: 'relative', transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.05)' } }}>
+          <Card sx={{ width: '100%', height: '60vh',  color: 'black', overflow: 'hidden', borderRadius: '16px', position: 'relative', transition: 'transform 0.3s', '&:hover': { transform: 'scale(1.05)' } }}>
             <img style={{ width: '100%', height: 'auto', objectFit: 'cover', borderTopLeftRadius: '16px', borderTopRightRadius: '16px', opacity: '0.3' }} src={item.image} alt={item.title} />
             <CardContent sx={{ padding: '1rem', position: 'absolute', bottom: '0', width: '100%' }}>
               <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>{item.title}</Typography>

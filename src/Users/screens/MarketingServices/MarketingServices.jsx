@@ -88,8 +88,8 @@ export const MarketingServices = () => {
                                 gap: '2rem',
 
                             }}
-                            data-aos="fade-up-right"
-                            data-aos-duration="500"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
                         >
                             <Typography variant="h4" sx={{ fontWeight: 700 }}>
                                 Consult our Expert: Book an Appointment Tab (CTA)

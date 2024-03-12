@@ -47,12 +47,10 @@ const StyledTextareaAutosize = styled(TextareaAutosize)(
         border-radius: 8px;
         color: ${theme.palette.mode === 'dark' ? grey[300] : grey[900]};
         background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
-        border: 1px solid ${
-    theme.palette.mode === 'dark' ? grey[700] : grey[200]
-  };
-        box-shadow: 0px 2px 2px ${
-    theme.palette.mode === 'dark' ? grey[900] : grey[50]
-  };
+        border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]
+    };
+        box-shadow: 0px 2px 2px ${theme.palette.mode === 'dark' ? grey[900] : grey[50]
+    };
       
         &:hover {
           border-color: ${blue[400]};
@@ -60,9 +58,8 @@ const StyledTextareaAutosize = styled(TextareaAutosize)(
       
         &:focus {
           border-color: ${blue[400]};
-          box-shadow: 0 0 0 3px ${
-    theme.palette.mode === 'dark' ? blue[600] : blue[200]
-  };
+          box-shadow: 0 0 0 3px ${theme.palette.mode === 'dark' ? blue[600] : blue[200]
+    };
         }
         
         &:focus-visible {
@@ -80,11 +77,11 @@ export default function Footer() {
         color: 'black',
       }}
     >
-      <Grid container spacing={2} sx={{padding : '5rem'}}>
+      <Grid container spacing={2} sx={{ padding: '5rem' }}>
         <Grid item xs={12} md={4}>
-          <Box sx={{display : 'flex' , flexDirection : 'column' , justifyContent : 'space-around' , gap : '1rem' , marginTop : '1.5rem' , maxWidth : '20rem'}}>
-            <Typography variant="h6" sx={{fontWeight : '700'}}>Let's Connect</Typography>
-            <Typography variant="body1" sx={{wordSpacing : '5px'}}>{footerDetailGetStart}</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', gap: '1rem', marginTop: '1.5rem', maxWidth: '20rem' }}>
+            <Typography variant="h6" sx={{ fontWeight: '700' }}>Let's Connect</Typography>
+            <Typography variant="body1" sx={{ wordSpacing: '5px' }}>{footerDetailGetStart}</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={3}>
@@ -100,13 +97,16 @@ export default function Footer() {
               >
                 <LocationOnIcon sx={{ color: 'black' }} />
                 <ListItemText
-                  primary="Your Location"
+                  primary="
+                  Office 212 Pyramid Center,
+                  Oud Metha, Dubai,
+                  UAE."
                   sx={{
                     '&:hover': {
                       color: 'red',
                       transition: '1s',
                       cursor: 'pointer',
-                      fontWeight : 'bold'
+                      fontWeight: 'bold'
                     },
                   }}
                 />
@@ -122,13 +122,13 @@ export default function Footer() {
               >
                 <PhoneIcon sx={{ color: 'black' }} />
                 <ListItemText
-                  primary="Your Phone Number"
+                  primary="+971 50 248 1131"
                   sx={{
                     '&:hover': {
                       color: 'red',
                       transition: '1s',
                       cursor: 'pointer',
-                      fontWeight : 'bold'
+                      fontWeight: 'bold'
                     },
                   }}
                 />
@@ -154,28 +154,29 @@ export default function Footer() {
                   }}
                 />
               </ListItem> */}
-
-              <ListItem
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'flex-start',
-                  alignItems: 'center',
-                  gap: '1rem',
-                  fontWeight : 'bold'
-                }}
-              >
-                <EmailIcon sx={{ color: 'black' }} />
-                <ListItemText
-                  primary="Your Email Address"
+              <a href="mailto:info@indenta.co" style={{color : 'black' , cursor : 'pointer' , textDecoration : 'none'}}>
+                <ListItem
                   sx={{
-                    '&:hover': {
-                      color: 'red',
-                      transition: '1s',
-                      cursor: 'pointer',
-                    },
+                    display: 'flex',
+                    justifyContent: 'flex-start',
+                    alignItems: 'center',
+                    gap: '1rem',
+                    fontWeight: 'bold'
                   }}
-                />
-              </ListItem>
+                >
+                  <EmailIcon sx={{ color: 'black' }} />
+                  <ListItemText
+                    primary="info@indenta.co"
+                    sx={{
+                      '&:hover': {
+                        color: 'red',
+                        transition: '1s',
+                        cursor: 'pointer',
+                      },
+                    }}
+                  />
+                </ListItem>
+              </a>
             </List>
           </Box>
         </Grid>
@@ -193,9 +194,9 @@ export default function Footer() {
       >
         <Grid item>
           <Typography
-          onClick={()=>naviagte('/')}
+            onClick={() => naviagte('/')}
             variant="body1"
-            sx={{ cursor : 'pointer' , fontSize: '0.9rem', '&:hover': { color: 'red', transition: '1s' } }}
+            sx={{ cursor: 'pointer', fontSize: '0.9rem', '&:hover': { color: 'red', transition: '1s' } }}
           >
             Home
           </Typography>
@@ -229,10 +230,10 @@ export default function Footer() {
         container
         justifyContent="center"
         spacing={2}
-        sx={{ marginTop: '.5rem', opacity: '0.9' , padding : '4rem' , backgroundColor : '#2B4742'}}
+        sx={{ marginTop: '.5rem', opacity: '0.9', padding: '4rem', backgroundColor: '#2B4742' }}
       >
         <Grid item>
-          <Typography variant="body1" sx={{ fontSize: '1rem' , color : 'white'}}>
+          <Typography variant="body1" sx={{ fontSize: '1rem', color: 'white' }}>
             &#169; 2024 Indenta
           </Typography>
         </Grid>

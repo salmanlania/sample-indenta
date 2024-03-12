@@ -3,6 +3,8 @@ import OurService from '../../components/OurService/Ourservice'
 import { Button, Typography, Container, Grid, Paper, Card, CardContent } from '@mui/material';
 // import './Services.css'
 import TypingEffect from 'react-typing-effect';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -13,6 +15,15 @@ import CreditCardBenifits from './CreditCardBenifits';
 export const Services = () => {
   useEffect(() => {
     document.title = 'Our Services | Indenta';
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+    window.addEventListener('scroll', AOS.refresh);
+
+    return () => {
+      window.removeEventListener('scroll', AOS.refresh);
+    };
   }, []);
   return (
     <div style={{ background: 'white' }}>
@@ -74,36 +85,42 @@ export const Services = () => {
         </Grid>
       </Paper> */}
 
-      <Card
+      {/* <Card
         sx={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           borderRadius: '8px',
         }}
-      >
-        <CardContent>
-          {/* <Typography variant="h4" sx={{textAlign : 'center' , fontWeight : 'bold'}}>
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      > */}
+      {/* <CardContent> */}
+      {/* <Typography variant="h4" sx={{textAlign : 'center' , fontWeight : 'bold'}}>
             The Smart Choice for Credit Cards in the UAE. Indenta DSA– Your Ultimate Credit Card Companion
           </Typography> */}
-          {/* <Button
+      {/* <Button
             variant="contained"
             color="primary"
             sx={{ marginTop: '20px' }}
           >
             Start Now <span style={{ marginLeft: '7px', fontSize: '1.6rem' }}>!</span>
           </Button> */}
-        </CardContent>
-      </Card>
+      {/* </CardContent> */}
+      {/* </Card> */}
 
       {/* <Paper elevation={3} sx={{ textAlign: 'center', width: '100vw', overflow: 'hidden', height: '3rem', display: 'flex', alignItems: 'center', height: '4rem' }}>
         <Typography variant="h4" sx={{ margin: 'auto', fontWeight: 'bold', marginBottom: '4rem', marginTop: '4rem' }}>
           Consult our Expert: Book an Appointment Tab (CTA)
         </Typography>
       </Paper> */}
-
-      <ServiceCards />
-      <CreditCardBenifits />
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <ServiceCards />
+        <CreditCardBenifits />
+      </div>
 
       <Paper elevation={3} sx={{ mt: 4, textAlign: 'center', width: '98.5vw', overflow: 'hidden', height: '9rem', display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center', marginBottom: '1rem', gap: '1rem', padding: '2rem' }}>
         <Typography variant="body1" sx={{ margin: 'auto', fontSize: '18px' }}>
